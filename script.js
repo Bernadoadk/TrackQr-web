@@ -6,6 +6,7 @@
   const navActions = document.querySelector(".nav-actions");
   const header = document.querySelector("[data-header]");
   const themeButtons = Array.from(document.querySelectorAll("[data-theme-option]"));
+  const scrollLinks = Array.from(document.querySelectorAll("[data-scroll-target]"));
 
   const getStoredTheme = () => localStorage.getItem("trackqr-theme") || "system";
   const resolveTheme = (choice) => (choice === "system" ? (systemThemeQuery.matches ? "dark" : "light") : choice);
@@ -41,6 +42,48 @@
     });
   });
 
+  const closeMobileMenu = () => {
+    if (!menu || !menuToggle) return;
+
+    menu.classList.remove("is-open");
+    navActions?.classList.remove("is-open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    const icon = menuToggle.querySelector("svg");
+
+    if (icon) {
+      icon.outerHTML = '<i data-lucide="menu" aria-hidden="true"></i>';
+      window.lucide?.createIcons();
+    }
+  };
+
+  const scrollToSection = (targetId) => {
+    const target = document.getElementById(targetId);
+    if (!target) return false;
+
+    target.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
+    window.history.replaceState(null, "", window.location.pathname || "/");
+    closeMobileMenu();
+    return true;
+  };
+
+  scrollLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const targetId = link.dataset.scrollTarget;
+      if (!targetId) return;
+
+      if (scrollToSection(targetId)) {
+        event.preventDefault();
+      }
+    });
+  });
+
+  const requestedSection = new URLSearchParams(window.location.search).get("section");
+  if (requestedSection) {
+    window.requestAnimationFrame(() => {
+      scrollToSection(requestedSection);
+    });
+  }
+
   if (menuToggle && menu) {
     menuToggle.addEventListener("click", () => {
       const isOpen = menu.classList.toggle("is-open");
@@ -58,15 +101,7 @@
 
     menu.addEventListener("click", (event) => {
       if (event.target instanceof HTMLAnchorElement) {
-        menu.classList.remove("is-open");
-        navActions?.classList.remove("is-open");
-        menuToggle.setAttribute("aria-expanded", "false");
-        const icon = menuToggle.querySelector("svg");
-
-        if (icon) {
-          icon.outerHTML = '<i data-lucide="menu" aria-hidden="true"></i>';
-          window.lucide?.createIcons();
-        }
+        closeMobileMenu();
       }
     });
   }

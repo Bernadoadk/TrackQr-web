@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Changelog | Track QR</title>
-    <meta name="description" content="Track QR product changelog, releases, improvements, and marketing site updates." />
+    <meta name="description" content="Track QR app changelog: QR code management, campaign pages, analytics, CSV exports, billing, and Shopify app updates." />
     <meta name="theme-color" content="#2563eb" />
     <link rel="icon" type="image/png" href="TrackQr.png" />
     <link rel="apple-touch-icon" href="TrackQr.png" />
@@ -28,7 +28,7 @@
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header" data-header>
       <nav class="nav-shell" aria-label="Main navigation">
-        <a class="brand" href="index.html#top" aria-label="Track QR home">
+        <a class="brand" href="/" aria-label="Track QR home">
           <img src="TrackQr.png" alt="" width="40" height="40" />
           <span>Track QR</span>
         </a>
@@ -37,10 +37,10 @@
           <span class="sr-only">Open menu</span>
         </button>
         <div class="nav-links" id="site-menu" data-menu>
-          <a href="index.html#features">Features</a>
-          <a href="index.html#proof">Analytics</a>
-          <a href="index.html#workflow">Workflow</a>
-          <a href="index.html#install">Install</a>
+          <a href="/?section=features">Features</a>
+          <a href="/?section=proof">Analytics</a>
+          <a href="/?section=workflow">Workflow</a>
+          <a href="/?section=install">Install</a>
         </div>
         <div class="nav-actions">
           <div class="theme-switcher" aria-label="Theme preference">
@@ -48,53 +48,85 @@
             <button type="button" class="theme-option" data-theme-option="dark" aria-label="Use dark theme"><i data-lucide="moon" aria-hidden="true"></i><span>Dark</span></button>
             <button type="button" class="theme-option" data-theme-option="system" aria-label="Use system theme"><i data-lucide="monitor" aria-hidden="true"></i><span>System</span></button>
           </div>
-          <a class="nav-cta" href="index.html#install">Install on Shopify</a>
+          <a class="nav-cta" href="/?section=install">Install on Shopify</a>
         </div>
       </nav>
     </header>
 
     <main id="main" class="legal-page">
       <section class="legal-hero">
-        <p class="eyebrow"><i data-lucide="list-plus" aria-hidden="true"></i> Product updates</p>
+        <p class="eyebrow"><i data-lucide="list-plus" aria-hidden="true"></i> App updates</p>
         <h1>Changelog</h1>
-        <p>Latest changes to the Track QR marketing site and Shopify QR tracking experience.</p>
+        <p>Product updates for the Track QR Shopify app.</p>
       </section>
 
       <article class="legal-content changelog-list">
         <section>
-          <span class="panel-kicker">June 30, 2026</span>
-          <h2>Marketing site foundation</h2>
+          <span class="panel-kicker">June 2026</span>
+          <h2>Analytics and CSV exports</h2>
           <ul>
-            <li>Launched the English Track QR marketing landing page.</li>
-            <li>Added light, dark, and system theme preferences.</li>
-            <li>Added Privacy Policy and Changelog pages.</li>
-            <li>Updated primary calls to action to Install on Shopify.</li>
+            <li>Connected the analytics dashboard to real scan data from the app database.</li>
+            <li>Added real metrics for scans over time, devices, countries, top QR codes, and recent scans.</li>
+            <li>Updated analytics exports so CSV files download directly instead of opening the Shopify admin app URL.</li>
+            <li>Made exports respect the selected reporting period, including Last N Days filters.</li>
+            <li>Clarified conversion chart behavior when attribution is not available on the current plan.</li>
           </ul>
         </section>
 
         <section>
-          <span class="panel-kicker">Initial release</span>
-          <h2>Track QR positioning</h2>
+          <span class="panel-kicker">June 2026</span>
+          <h2>QR manager improvements</h2>
           <ul>
-            <li>Introduced dynamic QR code tracking for Shopify campaigns.</li>
-            <li>Added campaign analytics, smart redirects, and reporting sections.</li>
-            <li>Included responsive layouts for desktop and mobile visitors.</li>
+            <li>Improved the My QR Codes page so lists use real QR code, scan, and conversion data.</li>
+            <li>Added filtered CSV exports for QR codes using the visible search, type, status, and sort controls.</li>
+            <li>Improved export reliability inside the embedded Shopify app experience.</li>
+          </ul>
+        </section>
+
+        <section>
+          <span class="panel-kicker">June 2026</span>
+          <h2>Campaign pages and editor</h2>
+          <ul>
+            <li>Added customizable campaign landing pages for QR destinations.</li>
+            <li>Introduced campaign page settings for layout, blocks, branding, and slug-based public pages.</li>
+            <li>Improved the campaign editor direction around merchant-friendly controls and better desktop layouts.</li>
+          </ul>
+        </section>
+
+        <section>
+          <span class="panel-kicker">June 2026</span>
+          <h2>Billing and pricing</h2>
+          <ul>
+            <li>Added clearer handling for Shopify billing errors so merchants see actionable messages instead of app crashes.</li>
+            <li>Added explicit billing test and production modes for review, staging, and live subscriptions.</li>
+            <li>Added a visible billing mode indicator on the Pricing page.</li>
+          </ul>
+        </section>
+
+        <section>
+          <span class="panel-kicker">Initial app release</span>
+          <h2>Core QR tracking foundation</h2>
+          <ul>
+            <li>Created the core Track QR Shopify app experience.</li>
+            <li>Added dynamic QR code creation, scan tracking, redirects, and campaign organization.</li>
+            <li>Added the first analytics, QR management, pricing, and public redirect routes.</li>
+            <li>Added Shopify webhook handling for app lifecycle, orders, customers, and privacy events.</li>
           </ul>
         </section>
       </article>
     </main>
 
     <footer class="site-footer">
-      <a class="brand" href="index.html#top" aria-label="Track QR home">
+      <a class="brand" href="/" aria-label="Track QR home">
         <img src="TrackQr.png" alt="" width="34" height="34" />
         <span>Track QR</span>
       </a>
       <div class="footer-meta">
         <p>© 2026 Track QR. Dynamic QR codes and campaign tracking for Shopify.</p>
         <p class="footer-links">
-          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="/privacy-policy">Privacy Policy</a>
           <span aria-hidden="true">·</span>
-          <a href="changelog.html">Changelog</a>
+          <a href="/changelog">Changelog</a>
         </p>
       </div>
     </footer>
