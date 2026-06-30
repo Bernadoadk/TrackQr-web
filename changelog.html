@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Changelog | Track QR</title>
+    <meta name="description" content="Track QR product changelog, releases, improvements, and marketing site updates." />
+    <meta name="theme-color" content="#2563eb" />
+    <link rel="icon" type="image/png" href="TrackQr.png" />
+    <link rel="apple-touch-icon" href="TrackQr.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;600;700&family=Fira+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        var savedTheme = localStorage.getItem("trackqr-theme") || "system";
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = savedTheme === "system" ? (prefersDark ? "dark" : "light") : savedTheme;
+        document.documentElement.dataset.themeChoice = savedTheme;
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" data-header>
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand" href="index.html#top" aria-label="Track QR home">
+          <img src="TrackQr.png" alt="" width="40" height="40" />
+          <span>Track QR</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
+          <i data-lucide="menu" aria-hidden="true"></i>
+          <span class="sr-only">Open menu</span>
+        </button>
+        <div class="nav-links" id="site-menu" data-menu>
+          <a href="index.html#features">Features</a>
+          <a href="index.html#proof">Analytics</a>
+          <a href="index.html#workflow">Workflow</a>
+          <a href="index.html#install">Install</a>
+        </div>
+        <div class="nav-actions">
+          <div class="theme-switcher" aria-label="Theme preference">
+            <button type="button" class="theme-option" data-theme-option="light" aria-label="Use light theme"><i data-lucide="sun" aria-hidden="true"></i><span>Light</span></button>
+            <button type="button" class="theme-option" data-theme-option="dark" aria-label="Use dark theme"><i data-lucide="moon" aria-hidden="true"></i><span>Dark</span></button>
+            <button type="button" class="theme-option" data-theme-option="system" aria-label="Use system theme"><i data-lucide="monitor" aria-hidden="true"></i><span>System</span></button>
+          </div>
+          <a class="nav-cta" href="index.html#install">Install on Shopify</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="legal-page">
+      <section class="legal-hero">
+        <p class="eyebrow"><i data-lucide="list-plus" aria-hidden="true"></i> Product updates</p>
+        <h1>Changelog</h1>
+        <p>Latest changes to the Track QR marketing site and Shopify QR tracking experience.</p>
+      </section>
+
+      <article class="legal-content changelog-list">
+        <section>
+          <span class="panel-kicker">June 30, 2026</span>
+          <h2>Marketing site foundation</h2>
+          <ul>
+            <li>Launched the English Track QR marketing landing page.</li>
+            <li>Added light, dark, and system theme preferences.</li>
+            <li>Added Privacy Policy and Changelog pages.</li>
+            <li>Updated primary calls to action to Install on Shopify.</li>
+          </ul>
+        </section>
+
+        <section>
+          <span class="panel-kicker">Initial release</span>
+          <h2>Track QR positioning</h2>
+          <ul>
+            <li>Introduced dynamic QR code tracking for Shopify campaigns.</li>
+            <li>Added campaign analytics, smart redirects, and reporting sections.</li>
+            <li>Included responsive layouts for desktop and mobile visitors.</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="index.html#top" aria-label="Track QR home">
+        <img src="TrackQr.png" alt="" width="34" height="34" />
+        <span>Track QR</span>
+      </a>
+      <div class="footer-meta">
+        <p>© 2026 Track QR. Dynamic QR codes and campaign tracking for Shopify.</p>
+        <p class="footer-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <span aria-hidden="true">·</span>
+          <a href="changelog.html">Changelog</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
