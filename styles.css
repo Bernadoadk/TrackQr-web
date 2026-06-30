@@ -839,6 +839,38 @@ h3 {
   align-items: center;
 }
 
+.faq-section {
+  background: var(--section);
+}
+
+.faq-list {
+  width: min(100%, 860px);
+  margin: 0 auto;
+  display: grid;
+  gap: 12px;
+}
+
+.faq-item {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  box-shadow: var(--card-shadow);
+}
+
+.faq-item summary {
+  min-height: 58px;
+  padding: 18px 22px;
+  color: var(--heading);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.faq-item p {
+  margin: 0;
+  padding: 0 22px 20px;
+  color: var(--muted);
+}
+
 .install-copy {
   justify-self: end;
   width: min(100%, 650px);
@@ -1112,6 +1144,7 @@ h3 {
   .section,
   .analytics-section,
   .install-section,
+  .faq-section,
   .quote-section,
   .legal-page {
     padding-left: 18px;
@@ -1121,6 +1154,7 @@ h3 {
   .section,
   .analytics-section,
   .install-section,
+  .faq-section,
   .quote-section {
     padding-top: 72px;
     padding-bottom: 72px;

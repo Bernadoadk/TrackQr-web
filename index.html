@@ -3,12 +3,34 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Track QR | Shopify QR code tracking and campaign analytics</title>
+    <title>Track QR | Shopify QR Code Tracking App for Campaign Analytics</title>
     <meta
       name="description"
-      content="Track QR helps Shopify merchants create dynamic QR codes, track every scan, and understand which offline and online campaigns drive shopper action."
+      content="Track QR is a Shopify QR code tracking app for dynamic QR codes, campaign analytics, scan attribution, smart redirects, and CSV reporting."
     />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Track QR" />
+    <meta name="application-name" content="Track QR" />
+    <link rel="canonical" href="https://track-qr-web.vercel.app/" />
     <meta name="theme-color" content="#2563eb" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Track QR" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Track QR | Shopify QR Code Tracking App" />
+    <meta
+      property="og:description"
+      content="Create dynamic QR codes for Shopify campaigns, track scans in real time, update destinations, and export performance reports."
+    />
+    <meta property="og:url" content="https://track-qr-web.vercel.app/" />
+    <meta property="og:image" content="https://track-qr-web.vercel.app/og-image-trackqr.png" />
+    <meta property="og:image:alt" content="Track QR analytics dashboard preview for Shopify QR code campaigns" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Track QR | Shopify QR Code Tracking App" />
+    <meta
+      name="twitter:description"
+      content="Dynamic QR codes, scan tracking, smart redirects, and campaign analytics for Shopify merchants."
+    />
+    <meta name="twitter:image" content="https://track-qr-web.vercel.app/og-image-trackqr.png" />
     <link rel="icon" type="image/png" href="TrackQr.png" />
     <link rel="apple-touch-icon" href="TrackQr.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,6 +48,79 @@
       })();
     </script>
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://track-qr-web.vercel.app/#organization",
+            "name": "Track QR",
+            "url": "https://track-qr-web.vercel.app/",
+            "logo": "https://track-qr-web.vercel.app/TrackQr.png"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://track-qr-web.vercel.app/#website",
+            "name": "Track QR",
+            "url": "https://track-qr-web.vercel.app/",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://track-qr-web.vercel.app/#organization"
+            }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://track-qr-web.vercel.app/#app",
+            "name": "Track QR",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "url": "https://track-qr-web.vercel.app/",
+            "image": "https://track-qr-web.vercel.app/og-image-trackqr.png",
+            "description": "Track QR helps Shopify merchants create dynamic QR codes, track scans, manage smart redirects, and measure campaign performance.",
+            "publisher": {
+              "@id": "https://track-qr-web.vercel.app/#organization"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://track-qr-web.vercel.app/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is Track QR?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Track QR is a Shopify QR code tracking app that helps merchants create dynamic QR codes, update destinations, and measure campaign performance."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I change a QR code destination after printing?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Track QR supports dynamic QR code destinations, so merchants can update the target URL without reprinting the QR code."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does Track QR provide scan analytics?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Track QR provides scan analytics such as campaign activity, devices, locations, recent scans, and CSV exports for reporting."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -276,6 +371,40 @@
             <i data-lucide="shopping-bag" aria-hidden="true"></i>
             Install on Shopify
           </a>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">
+              <i data-lucide="circle-help" aria-hidden="true"></i>
+              FAQ
+            </p>
+            <h2 id="faq-title">Questions merchants ask before tracking QR campaigns.</h2>
+          </div>
+          <p>
+            Track QR is built for Shopify teams that use QR codes on packaging, inserts, events, retail displays, and offline marketing campaigns.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>What is Track QR?</summary>
+            <p>Track QR is a Shopify QR code tracking app that helps merchants create dynamic QR codes, update destinations, and measure campaign performance.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Can I change a QR code destination after printing?</summary>
+            <p>Yes. Dynamic QR destinations let you update the target URL without reprinting packaging, flyers, inserts, or retail assets.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Does Track QR provide scan analytics?</summary>
+            <p>Yes. Track QR helps you review scan activity, devices, locations, recent scans, top QR codes, and campaign exports.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Who is Track QR for?</summary>
+            <p>Track QR is for Shopify merchants, growth teams, agencies, and retail operators that need to connect offline QR campaigns to measurable online actions.</p>
+          </details>
         </div>
       </section>
     </main>
