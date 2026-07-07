@@ -1,49 +1,43 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Track QR | Shopify QR Code Tracking App for Campaign Analytics</title>
-    <meta
-      name="description"
-      content="Track QR is a Shopify QR code tracking app for dynamic QR codes, campaign analytics, scan attribution, smart redirects, and CSV reporting."
-    />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
-    <meta name="author" content="Track QR" />
-    <meta name="application-name" content="Track QR" />
-    <meta name="google-site-verification" content="1WO5HI22VEIo0wLTFWm4mnIgX4Uyrpyveuc96PK_wcA" />
-    <link rel="canonical" href="https://track-qr-web.vercel.app/" />
-    <meta name="theme-color" content="#2563eb" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Track QR" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:title" content="Track QR | Shopify QR Code Tracking App" />
-    <meta
-      property="og:description"
-      content="Create dynamic QR codes for Shopify campaigns, track scans in real time, update destinations, and export performance reports."
-    />
-    <meta property="og:url" content="https://track-qr-web.vercel.app/" />
-    <meta property="og:image" content="https://track-qr-web.vercel.app/og-image-trackqr.png" />
-    <meta property="og:image:alt" content="Track QR analytics dashboard preview for Shopify QR code campaigns" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Track QR | Shopify QR Code Tracking App" />
-    <meta
-      name="twitter:description"
-      content="Dynamic QR codes, scan tracking, smart redirects, and campaign analytics for Shopify merchants."
-    />
-    <meta name="twitter:image" content="https://track-qr-web.vercel.app/og-image-trackqr.png" />
-    <link rel="icon" type="image/png" href="TrackQr.png" />
-    <link rel="apple-touch-icon" href="TrackQr.png" />
-    <script>
-      (function () {
-        var savedTheme = localStorage.getItem("trackqr-theme") || "system";
-        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        document.documentElement.dataset.theme = savedTheme === "system" ? (prefersDark ? "dark" : "light") : savedTheme;
-        document.documentElement.dataset.themeChoice = savedTheme;
-      })();
-    </script>
-    <link rel="stylesheet" href="styles.css" />
-    <script type="application/ld+json">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Track QR | Shopify QR Code Tracking App for Campaign Analytics</title>
+  <meta name="description"
+    content="Track QR is a Shopify QR code tracking app for dynamic QR codes, campaign analytics, scan attribution, smart redirects, and CSV reporting." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="Track QR" />
+  <meta name="application-name" content="Track QR" />
+  <link rel="canonical" href="https://track-qr-web.vercel.app/" />
+  <meta name="theme-color" content="#2563eb" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Track QR" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Track QR | Shopify QR Code Tracking App" />
+  <meta property="og:description"
+    content="Create dynamic QR codes for Shopify campaigns, track scans in real time, update destinations, and export performance reports." />
+  <meta property="og:url" content="https://track-qr-web.vercel.app/" />
+  <meta property="og:image" content="https://track-qr-web.vercel.app/og-image-trackqr.png" />
+  <meta property="og:image:alt" content="Track QR analytics dashboard preview for Shopify QR code campaigns" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Track QR | Shopify QR Code Tracking App" />
+  <meta name="twitter:description"
+    content="Dynamic QR codes, scan tracking, smart redirects, and campaign analytics for Shopify merchants." />
+  <meta name="twitter:image" content="https://track-qr-web.vercel.app/og-image-trackqr.png" />
+  <link rel="icon" type="image/png" href="TrackQr.png" />
+  <link rel="apple-touch-icon" href="TrackQr.png" />
+  <script>
+    (function () {
+      var savedTheme = localStorage.getItem("trackqr-theme") || "system";
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme = savedTheme === "system" ? (prefersDark ? "dark" : "light") : savedTheme;
+      document.documentElement.dataset.themeChoice = savedTheme;
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@graph": [
@@ -116,310 +110,325 @@
         ]
       }
     </script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+</head>
 
-    <header class="site-header" data-header>
-      <nav class="nav-shell" aria-label="Main navigation">
-        <a class="brand" href="/" aria-label="Track QR home">
-          <img src="TrackQr.png" alt="" width="40" height="40" />
-          <span>Track QR</span>
-        </a>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
-          <i data-lucide="menu" aria-hidden="true"></i>
-          <span class="sr-only">Open menu</span>
-        </button>
+  <header class="site-header" data-header>
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand" href="/" aria-label="Track QR home">
+        <img src="TrackQr.png" alt="" width="40" height="40" />
+        <span>Track QR</span>
+      </a>
 
-        <div class="nav-links" id="site-menu" data-menu>
-          <a href="/" data-scroll-target="features">Features</a>
-          <a href="/" data-scroll-target="proof">Analytics</a>
-          <a href="/" data-scroll-target="workflow">Workflow</a>
-          <a href="/" data-scroll-target="install">Install</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
+        <i data-lucide="menu" aria-hidden="true"></i>
+        <span class="sr-only">Open menu</span>
+      </button>
+
+      <div class="nav-links" id="site-menu" data-menu>
+        <a href="/" data-scroll-target="features">Features</a>
+        <a href="/" data-scroll-target="proof">Analytics</a>
+        <a href="/" data-scroll-target="workflow">Workflow</a>
+        <a href="/" data-scroll-target="install">Install</a>
+      </div>
+
+      <div class="nav-actions">
+        <div class="theme-switcher" aria-label="Theme preference">
+          <button type="button" class="theme-option" data-theme-option="light" aria-label="Use light theme">
+            <i data-lucide="sun" aria-hidden="true"></i>
+            <span>Light</span>
+          </button>
+          <button type="button" class="theme-option" data-theme-option="dark" aria-label="Use dark theme">
+            <i data-lucide="moon" aria-hidden="true"></i>
+            <span>Dark</span>
+          </button>
+          <button type="button" class="theme-option" data-theme-option="system" aria-label="Use system theme">
+            <i data-lucide="monitor" aria-hidden="true"></i>
+            <span>System</span>
+          </button>
         </div>
+        <a class="nav-cta" href="https://apps.shopify.com/trackqr" target="_blank" rel="noopener noreferrer">Install on
+          Shopify</a>
+      </div>
+    </nav>
+  </header>
 
-        <div class="nav-actions">
-          <div class="theme-switcher" aria-label="Theme preference">
-            <button type="button" class="theme-option" data-theme-option="light" aria-label="Use light theme">
-              <i data-lucide="sun" aria-hidden="true"></i>
-              <span>Light</span>
-            </button>
-            <button type="button" class="theme-option" data-theme-option="dark" aria-label="Use dark theme">
-              <i data-lucide="moon" aria-hidden="true"></i>
-              <span>Dark</span>
-            </button>
-            <button type="button" class="theme-option" data-theme-option="system" aria-label="Use system theme">
-              <i data-lucide="monitor" aria-hidden="true"></i>
-              <span>System</span>
-            </button>
-          </div>
-          <a class="nav-cta" href="https://apps.shopify.com/trackqr" target="_blank" rel="noopener noreferrer">Install on Shopify</a>
-        </div>
-      </nav>
-    </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-visual" aria-hidden="true">
+        <img src="TrackQr.png" alt="" />
+        <div class="scan-line"></div>
+      </div>
 
-    <main id="main">
-      <section class="hero" id="top" aria-labelledby="hero-title">
-        <div class="hero-visual" aria-hidden="true">
-          <img src="TrackQr.png" alt="" />
-          <div class="scan-line"></div>
-        </div>
+      <div class="hero-content reveal">
+        <h1 id="hero-title">Track QR codes that turn shoppers into measurable revenue.</h1>
+        <p class="hero-copy">
+          Create dynamic QR codes for packaging, flyers, pop-ups, and retail displays. Track scans, destinations, and
+          campaign performance from one clean dashboard built for Shopify growth.
+        </p>
 
-        <div class="hero-content reveal">
-          <h1 id="hero-title">Track QR codes that turn shoppers into measurable revenue.</h1>
-          <p class="hero-copy">
-            Create dynamic QR codes for packaging, flyers, pop-ups, and retail displays. Track scans, destinations, and campaign performance from one clean dashboard built for Shopify growth.
-          </p>
-
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button button-primary" href="https://apps.shopify.com/trackqr" target="_blank" rel="noopener noreferrer">
-              <i data-lucide="shopping-bag" aria-hidden="true"></i>
-              Install on Shopify
-            </a>
-            <a class="button button-secondary" href="/" data-scroll-target="features">
-              <i data-lucide="bar-chart-3" aria-hidden="true"></i>
-              Explore features
-            </a>
-          </div>
-
-          <dl class="hero-metrics" aria-label="Track QR indicators">
-            <div>
-              <dt><span data-count="98">0</span>%</dt>
-              <dd>scan attribution</dd>
-            </div>
-            <div>
-              <dt><span data-count="3">0</span>x</dt>
-              <dd>faster campaign learning</dd>
-            </div>
-            <div>
-              <dt><span data-count="24">0</span>/7</dt>
-              <dd>live monitoring</dd>
-            </div>
-          </dl>
-        </div>
-      </section>
-
-      <section class="trust-band" aria-label="Key benefits">
-        <div class="trust-item">
-          <i data-lucide="shield-check" aria-hidden="true"></i>
-          Secure dynamic QR codes
-        </div>
-        <div class="trust-item">
-          <i data-lucide="map-pin" aria-hidden="true"></i>
-          Campaign and location insights
-        </div>
-        <div class="trust-item">
-          <i data-lucide="mouse-pointer-click" aria-hidden="true"></i>
-          Update links without reprinting
-        </div>
-      </section>
-
-      <section class="section section-grid" id="features" aria-labelledby="features-title">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow">
-              <i data-lucide="activity" aria-hidden="true"></i>
-              Scan intelligence
-            </p>
-            <h2 id="features-title">Everything you need to measure QR campaigns.</h2>
-          </div>
-          <p>
-            Track QR connects the physical customer journey to Shopify-ready campaign data, so your team can ship faster and spend smarter.
-          </p>
-        </div>
-
-        <div class="feature-grid">
-          <article class="feature-card reveal">
-            <span class="icon-chip"><i data-lucide="qr-code" aria-hidden="true"></i></span>
-            <h3>Dynamic QR codes</h3>
-            <p>Change destinations, add campaign parameters, and keep printed assets useful after launch.</p>
-          </article>
-          <article class="feature-card reveal">
-            <span class="icon-chip"><i data-lucide="line-chart" aria-hidden="true"></i></span>
-            <h3>Real-time analytics</h3>
-            <p>Track scans, devices, sources, peak hours, and conversion signals from a focused dashboard.</p>
-          </article>
-          <article class="feature-card reveal">
-            <span class="icon-chip"><i data-lucide="split" aria-hidden="true"></i></span>
-            <h3>Smart redirects</h3>
-            <p>Send shoppers to the right product, collection, offer, or landing page without changing the code.</p>
-          </article>
-          <article class="feature-card reveal">
-            <span class="icon-chip"><i data-lucide="lock-keyhole" aria-hidden="true"></i></span>
-            <h3>Clean campaign control</h3>
-            <p>Organize QR codes by store, drop, event, or channel with reporting your team can trust.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="analytics-section" id="proof" aria-labelledby="proof-title">
-        <div class="analytics-copy reveal">
-          <p class="eyebrow">
-            <i data-lucide="gauge" aria-hidden="true"></i>
-            Performance view
-          </p>
-          <h2 id="proof-title">See what is working while the campaign is still live.</h2>
-          <p>
-            Every scan becomes a signal: product, placement, channel, and moment. Make decisions with numbers instead of guesses.
-          </p>
-          <ul class="check-list">
-            <li><i data-lucide="check" aria-hidden="true"></i> Identify the most active placements</li>
-            <li><i data-lucide="check" aria-hidden="true"></i> Export clear reports for marketing reviews</li>
-            <li><i data-lucide="check" aria-hidden="true"></i> Spot spikes, broken links, and campaign momentum</li>
-          </ul>
-        </div>
-
-        <div class="dashboard-panel reveal" aria-label="Analytics dashboard preview">
-          <div class="panel-top">
-            <div>
-              <span class="panel-kicker">Active campaign</span>
-              <strong>Summer product drop</strong>
-            </div>
-            <span class="live-pill"><span></span> Live</span>
-          </div>
-          <div class="panel-metric">
-            <span>Scans today</span>
-            <strong>12,486</strong>
-            <small>+32% vs. yesterday</small>
-          </div>
-          <div class="chart-bars" aria-hidden="true">
-            <span style="--h: 48%"></span>
-            <span style="--h: 64%"></span>
-            <span style="--h: 38%"></span>
-            <span style="--h: 76%"></span>
-            <span style="--h: 58%"></span>
-            <span style="--h: 88%"></span>
-            <span style="--h: 72%"></span>
-            <span style="--h: 92%"></span>
-          </div>
-          <div class="insight-row">
-            <span><i data-lucide="smartphone" aria-hidden="true"></i> Mobile 86%</span>
-            <span><i data-lucide="map" aria-hidden="true"></i> Top channel: Packaging</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section workflow" id="workflow" aria-labelledby="workflow-title">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow">
-              <i data-lucide="route" aria-hidden="true"></i>
-              Simple workflow
-            </p>
-            <h2 id="workflow-title">From idea to insight in three steps.</h2>
-          </div>
-        </div>
-
-        <div class="steps">
-          <article class="step reveal">
-            <span>01</span>
-            <h3>Create</h3>
-            <p>Generate a branded dynamic QR code for print, product packaging, events, or web campaigns.</p>
-          </article>
-          <article class="step reveal">
-            <span>02</span>
-            <h3>Launch</h3>
-            <p>Publish the same code across channels and adjust the destination whenever the campaign changes.</p>
-          </article>
-          <article class="step reveal">
-            <span>03</span>
-            <h3>Optimize</h3>
-            <p>Compare scan performance and focus budget on the placements that bring shoppers closer to purchase.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="quote-section" aria-labelledby="quote-title">
-        <div class="quote-card reveal">
-          <i data-lucide="quote" aria-hidden="true"></i>
-          <h2 id="quote-title">"We finally know which offline moments drive online action."</h2>
-          <p>
-            Track QR gives Shopify teams a practical way to connect packaging, retail displays, and field campaigns to measurable shopper behavior.
-          </p>
-          <div class="quote-author">
-            <span>MK</span>
-            <div>
-              <strong>Growth lead</strong>
-              <small>Commerce and retail campaigns</small>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="install-section" id="install" aria-labelledby="install-title">
-        <div class="install-copy reveal">
-          <p class="eyebrow">
-            <i data-lucide="shopping-bag" aria-hidden="true"></i>
-            Shopify ready
-          </p>
-          <h2 id="install-title">Add QR campaign tracking to your Shopify growth stack.</h2>
-          <p>
-            Install Track QR, create your first dynamic code, and start measuring scans from your next product drop, event, insert, or retail display.
-          </p>
-        </div>
-        <div class="install-card reveal">
-          <span class="pricing-label">Track QR for Shopify</span>
-          <strong>Install and start tracking</strong>
-          <p>Built for QR campaigns that need clean analytics, flexible redirects, and fast campaign reporting.</p>
-          <a class="button button-primary" href="https://apps.shopify.com/trackqr" target="_blank" rel="noopener noreferrer" aria-label="Install Track QR on Shopify">
+        <div class="hero-actions" aria-label="Primary actions">
+          <a class="button button-primary" href="https://apps.shopify.com/trackqr" target="_blank"
+            rel="noopener noreferrer">
             <i data-lucide="shopping-bag" aria-hidden="true"></i>
             Install on Shopify
           </a>
+          <a class="button button-secondary" href="/" data-scroll-target="features">
+            <i data-lucide="bar-chart-3" aria-hidden="true"></i>
+            Explore features
+          </a>
         </div>
-      </section>
 
-      <section class="section faq-section" id="faq" aria-labelledby="faq-title">
-        <div class="section-heading reveal">
+        <dl class="hero-metrics" aria-label="Track QR indicators">
           <div>
-            <p class="eyebrow">
-              <i data-lucide="circle-help" aria-hidden="true"></i>
-              FAQ
-            </p>
-            <h2 id="faq-title">Questions merchants ask before tracking QR campaigns.</h2>
+            <dt><span data-count="98">0</span>%</dt>
+            <dd>scan attribution</dd>
           </div>
-          <p>
-            Track QR is built for Shopify teams that use QR codes on packaging, inserts, events, retail displays, and offline marketing campaigns.
+          <div>
+            <dt><span data-count="3">0</span>x</dt>
+            <dd>faster campaign learning</dd>
+          </div>
+          <div>
+            <dt><span data-count="24">0</span>/7</dt>
+            <dd>live monitoring</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="trust-band" aria-label="Key benefits">
+      <div class="trust-item">
+        <i data-lucide="shield-check" aria-hidden="true"></i>
+        Secure dynamic QR codes
+      </div>
+      <div class="trust-item">
+        <i data-lucide="map-pin" aria-hidden="true"></i>
+        Campaign and location insights
+      </div>
+      <div class="trust-item">
+        <i data-lucide="mouse-pointer-click" aria-hidden="true"></i>
+        Update links without reprinting
+      </div>
+    </section>
+
+    <section class="section section-grid" id="features" aria-labelledby="features-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">
+            <i data-lucide="activity" aria-hidden="true"></i>
+            Scan intelligence
           </p>
+          <h2 id="features-title">Everything you need to measure QR campaigns.</h2>
         </div>
-
-        <div class="faq-list">
-          <details class="faq-item reveal">
-            <summary>What is Track QR?</summary>
-            <p>Track QR is a Shopify QR code tracking app that helps merchants create dynamic QR codes, update destinations, and measure campaign performance.</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary>Can I change a QR code destination after printing?</summary>
-            <p>Yes. Dynamic QR destinations let you update the target URL without reprinting packaging, flyers, inserts, or retail assets.</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary>Does Track QR provide scan analytics?</summary>
-            <p>Yes. Track QR helps you review scan activity, devices, locations, recent scans, top QR codes, and campaign exports.</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary>Who is Track QR for?</summary>
-            <p>Track QR is for Shopify merchants, growth teams, agencies, and retail operators that need to connect offline QR campaigns to measurable online actions.</p>
-          </details>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <a class="brand" href="/" aria-label="Track QR home">
-        <img src="TrackQr.png" alt="" width="34" height="34" />
-        <span>Track QR</span>
-      </a>
-      <div class="footer-meta">
-        <p>© 2026 Track QR. Dynamic QR codes and campaign tracking for Shopify.</p>
-        <p class="footer-links">
-          <a href="/privacy-policy">Privacy Policy</a>
-          <span aria-hidden="true">·</span>
-          <a href="/changelog">Changelog</a>
+        <p>
+          Track QR connects the physical customer journey to Shopify-ready campaign data, so your team can ship faster
+          and spend smarter.
         </p>
       </div>
-    </footer>
 
-    <script src="lucide.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <span class="icon-chip"><i data-lucide="qr-code" aria-hidden="true"></i></span>
+          <h3>Dynamic QR codes</h3>
+          <p>Change destinations, add campaign parameters, and keep printed assets useful after launch.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="icon-chip"><i data-lucide="line-chart" aria-hidden="true"></i></span>
+          <h3>Real-time analytics</h3>
+          <p>Track scans, devices, sources, peak hours, and conversion signals from a focused dashboard.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="icon-chip"><i data-lucide="split" aria-hidden="true"></i></span>
+          <h3>Smart redirects</h3>
+          <p>Send shoppers to the right product, collection, offer, or landing page without changing the code.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="icon-chip"><i data-lucide="lock-keyhole" aria-hidden="true"></i></span>
+          <h3>Clean campaign control</h3>
+          <p>Organize QR codes by store, drop, event, or channel with reporting your team can trust.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="analytics-section" id="proof" aria-labelledby="proof-title">
+      <div class="analytics-copy reveal">
+        <p class="eyebrow">
+          <i data-lucide="gauge" aria-hidden="true"></i>
+          Performance view
+        </p>
+        <h2 id="proof-title">See what is working while the campaign is still live.</h2>
+        <p>
+          Every scan becomes a signal: product, placement, channel, and moment. Make decisions with numbers instead of
+          guesses.
+        </p>
+        <ul class="check-list">
+          <li><i data-lucide="check" aria-hidden="true"></i> Identify the most active placements</li>
+          <li><i data-lucide="check" aria-hidden="true"></i> Export clear reports for marketing reviews</li>
+          <li><i data-lucide="check" aria-hidden="true"></i> Spot spikes, broken links, and campaign momentum</li>
+        </ul>
+      </div>
+
+      <div class="dashboard-panel reveal" aria-label="Analytics dashboard preview">
+        <div class="panel-top">
+          <div>
+            <span class="panel-kicker">Active campaign</span>
+            <strong>Summer product drop</strong>
+          </div>
+          <span class="live-pill"><span></span> Live</span>
+        </div>
+        <div class="panel-metric">
+          <span>Scans today</span>
+          <strong>12,486</strong>
+          <small>+32% vs. yesterday</small>
+        </div>
+        <div class="chart-bars" aria-hidden="true">
+          <span style="--h: 48%"></span>
+          <span style="--h: 64%"></span>
+          <span style="--h: 38%"></span>
+          <span style="--h: 76%"></span>
+          <span style="--h: 58%"></span>
+          <span style="--h: 88%"></span>
+          <span style="--h: 72%"></span>
+          <span style="--h: 92%"></span>
+        </div>
+        <div class="insight-row">
+          <span><i data-lucide="smartphone" aria-hidden="true"></i> Mobile 86%</span>
+          <span><i data-lucide="map" aria-hidden="true"></i> Top channel: Packaging</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section workflow" id="workflow" aria-labelledby="workflow-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">
+            <i data-lucide="route" aria-hidden="true"></i>
+            Simple workflow
+          </p>
+          <h2 id="workflow-title">From idea to insight in three steps.</h2>
+        </div>
+      </div>
+
+      <div class="steps">
+        <article class="step reveal">
+          <span>01</span>
+          <h3>Create</h3>
+          <p>Generate a branded dynamic QR code for print, product packaging, events, or web campaigns.</p>
+        </article>
+        <article class="step reveal">
+          <span>02</span>
+          <h3>Launch</h3>
+          <p>Publish the same code across channels and adjust the destination whenever the campaign changes.</p>
+        </article>
+        <article class="step reveal">
+          <span>03</span>
+          <h3>Optimize</h3>
+          <p>Compare scan performance and focus budget on the placements that bring shoppers closer to purchase.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-section" aria-labelledby="quote-title">
+      <div class="quote-card reveal">
+        <i data-lucide="quote" aria-hidden="true"></i>
+        <h2 id="quote-title">"We finally know which offline moments drive online action."</h2>
+        <p>
+          Track QR gives Shopify teams a practical way to connect packaging, retail displays, and field campaigns to
+          measurable shopper behavior.
+        </p>
+        <div class="quote-author">
+          <span>MK</span>
+          <div>
+            <strong>Growth lead</strong>
+            <small>Commerce and retail campaigns</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="install-section" id="install" aria-labelledby="install-title">
+      <div class="install-copy reveal">
+        <p class="eyebrow">
+          <i data-lucide="shopping-bag" aria-hidden="true"></i>
+          Shopify ready
+        </p>
+        <h2 id="install-title">Add QR campaign tracking to your Shopify growth stack.</h2>
+        <p>
+          Install Track QR, create your first dynamic code, and start measuring scans from your next product drop,
+          event, insert, or retail display.
+        </p>
+      </div>
+      <div class="install-card reveal">
+        <span class="pricing-label">Track QR for Shopify</span>
+        <strong>Install and start tracking</strong>
+        <p>Built for QR campaigns that need clean analytics, flexible redirects, and fast campaign reporting.</p>
+        <a class="button button-primary" href="https://apps.shopify.com/trackqr" target="_blank"
+          rel="noopener noreferrer" aria-label="Install Track QR on Shopify">
+          <i data-lucide="shopping-bag" aria-hidden="true"></i>
+          Install on Shopify
+        </a>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">
+            <i data-lucide="circle-help" aria-hidden="true"></i>
+            FAQ
+          </p>
+          <h2 id="faq-title">Questions merchants ask before tracking QR campaigns.</h2>
+        </div>
+        <p>
+          Track QR is built for Shopify teams that use QR codes on packaging, inserts, events, retail displays, and
+          offline marketing campaigns.
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary>What is Track QR?</summary>
+          <p>Track QR is a Shopify QR code tracking app that helps merchants create dynamic QR codes, update
+            destinations, and measure campaign performance.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Can I change a QR code destination after printing?</summary>
+          <p>Yes. Dynamic QR destinations let you update the target URL without reprinting packaging, flyers, inserts,
+            or retail assets.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Does Track QR provide scan analytics?</summary>
+          <p>Yes. Track QR helps you review scan activity, devices, locations, recent scans, top QR codes, and campaign
+            exports.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Who is Track QR for?</summary>
+          <p>Track QR is for Shopify merchants, growth teams, agencies, and retail operators that need to connect
+            offline QR campaigns to measurable online actions.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="/" aria-label="Track QR home">
+      <img src="TrackQr.png" alt="" width="34" height="34" />
+      <span>Track QR</span>
+    </a>
+    <div class="footer-meta">
+      <p>© 2026 Track QR. Dynamic QR codes and campaign tracking for Shopify.</p>
+      <p class="footer-links">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <span aria-hidden="true">·</span>
+        <a href="/changelog">Changelog</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="lucide.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
